@@ -1,0 +1,11 @@
+version: '3'
+services:
+  nginx:
+    container_name: 'nginx'
+    image: 'nginx-comp:latest'
+    ports:
+      - 4080:80
+      - 443:443
+      - 4284:4284
+      - 3000:3000
+    working_dir: /var/www/node
